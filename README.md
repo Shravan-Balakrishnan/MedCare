@@ -484,6 +484,7 @@ MedCare uses a consistent premium dark-mode aesthetic across all pages:
 
 ## 👥 Team
 
-Built for **TinkerHack** hackathon.
+**Built by :**
+**ADWAITH SANTHOSH** ~ **AFHAM KAVIL** ~ **SANGEETH T K** ~ **SHRAVAN BALAKRISHNAN**
+ 
 
-Repository: [github.com/Shravan-Balakrishnan/MedCare](https://github.com/Shravan-Balakrishnan/MedCare)
