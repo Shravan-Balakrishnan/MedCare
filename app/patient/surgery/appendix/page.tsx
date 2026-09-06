@@ -7,12 +7,22 @@ import app1 from './images/app1.png';
 import app2 from './images/app2.png';
 import app3 from './images/app3.png';
 import app4 from './images/app4.png';
+import app5 from './images/app5.png';
+import app6 from './images/app6.png';
+import app7 from './images/app7.png';
+import app8 from './images/app8.png';
+import appExtra from './images/image.png';
 
 const images = [
   app1.src,
   app2.src,
   app3.src,
-  app4.src
+  app4.src,
+  app5.src,
+  app6.src,
+  app7.src,
+  app8.src,
+  appExtra.src,
 ];
 
 export default function AppendixSurgery() {

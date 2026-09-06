@@ -71,7 +71,7 @@ export default function PatientDashboard() {
           <div className="flex items-center justify-between mb-5">
             <h2 className="text-xl font-bold">What would you like to do?</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {/* Triage Card */}
             <button
@@ -88,7 +88,7 @@ export default function PatientDashboard() {
                 <span className="text-xs font-bold uppercase tracking-widest text-gray-900/60">Symptom Check</span>
               </div>
               <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-gray-900 tracking-tight leading-tight">Start Triage</h3>
+                <h3 className="text-2xl font-bold text-gray-900 tracking-tight leading-tight">Start Triage</h3>
                 <p className="text-gray-900/70 text-sm mt-2 leading-relaxed">Not feeling well? Let&apos;s check your symptoms.</p>
                 <div className="mt-5 inline-flex items-center gap-2 font-bold text-sm text-gray-900 group-hover:translate-x-1 transition-transform">
                   Begin Assessment
@@ -114,10 +114,34 @@ export default function PatientDashboard() {
                 <span className="text-xs font-bold uppercase tracking-widest text-gray-900/60">Procedure Tracker</span>
               </div>
               <div className="relative z-10">
-                <h3 className="text-3xl font-bold text-gray-900 tracking-tight leading-tight">My Surgery Journey</h3>
+                <h3 className="text-2xl font-bold text-gray-900 tracking-tight leading-tight">My Surgery Journey</h3>
                 <p className="text-gray-900/70 text-sm mt-2 leading-relaxed">Explore your upcoming procedure step-by-step.</p>
                 <div className="mt-5 inline-flex items-center gap-2 font-bold text-sm text-gray-900 group-hover:translate-x-1 transition-transform">
                   View Timeline
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              </div>
+            </button>
+
+            {/* Medico Legality Card */}
+            <button
+              onClick={() => router.push('/patient/medico-legality')}
+              className="group bg-[#FFF3CD] h-[300px] rounded-[2rem] p-8 flex flex-col justify-between shadow-lg transition-transform hover:scale-105 cursor-pointer text-left relative overflow-hidden"
+            >
+              <div className="absolute -bottom-10 -right-10 w-48 h-48 rounded-full bg-white/20 group-hover:scale-110 transition-transform duration-500" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 rounded-2xl bg-gray-900/15 flex items-center justify-center mb-4">
+                  <span className="text-2xl">⚖️</span>
+                </div>
+                <span className="text-xs font-bold uppercase tracking-widest text-gray-900/60">Legal Rights</span>
+              </div>
+              <div className="relative z-10">
+                <h3 className="text-2xl font-bold text-gray-900 tracking-tight leading-tight">Medico Legality</h3>
+                <p className="text-gray-900/70 text-sm mt-2 leading-relaxed">Ask Advocate Mukundan Unni about your medical legal rights.</p>
+                <div className="mt-5 inline-flex items-center gap-2 font-bold text-sm text-gray-900 group-hover:translate-x-1 transition-transform">
+                  Ask Now
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
